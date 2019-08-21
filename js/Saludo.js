@@ -19,7 +19,7 @@ class Saludo extends React.Component {
   render () {
     return (
       <div>
-        <h1>¡Hola {this.state.nombreCompleto}!</h1>
+        <h1>¡Hola !</h1>
 
         <ul>
           {this.state.tareas.map(t => <li>{t}</li>)}
@@ -28,3 +28,6 @@ class Saludo extends React.Component {
     );
   }
 }
+
+
+ReactDOM.render(<Saludo />, document.getElementById("root"));
